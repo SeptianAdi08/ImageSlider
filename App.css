@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+:root {
+
+    --font: 'Poppins', sans-serif;
+    --black: #000000;
+    --abu: #5D5D5D;
+    --box-shdow: var(--abu);
+    --outline: var(--abu);
+    --fontcolor: #ffff;
+    --color: #9176ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .2s linear;
+    font-family: var(--font);
+    color: var(--fontcolor);
+}
+
+body {
+    background-color: #000000;
+}
+
+
+section {
+    padding: 0.5rem 9%;
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    padding: 2rem 9%;
+    align-items: center;
+    justify-content: space-between;
+    background: #000000;
+}
+
+.header p {
+    color: var(--fontcolor);
+    font-size: 1.7rem;
+    margin: 0 1rem;
+
+}
+
+
+
+.header .navbar a:hover {
+    color: var(--abu);
+}
+
+.header .navbar a {
+    color: var(--fontcolor);
+    font-size: 1.2rem;
+    margin: 0 1rem;
+
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../src/assets/img/bac-Header.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 30rem;
+
+
+}
+
+.home .content {
+    text-align: left;
+    position: absolute;
+    top: 10rem;
+    left: 5rem;
+}
+
+.home .content h3 {
+    width: 13em;
+    word-wrap: break-word;
+    color: white;
+    font-size: 2rem;
+    line-height: 1.8;
+}
+
+.home .content p {
+    font-size: 0.90rem;
+    color: white;
+    line-height: 1rem;
+}
+
+
+
+.galery {
+
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 5rem;
+    column-gap: 2rem;
+    margin-top: 4rem;
+
+}
+
+.galery .box img {
+    width: 20rem;
+    height: 29rem;
+    background-size: cover;
+    border-right: 1.5px solid var(--abu);
+    border-bottom: 3px solid var(--abu);
+
+}
+
+.service h1 {
+    font-size: 1.5rem;
+    margin: 3rem;
+    margin-left: 1.5rem;
+    color: var(--fontcolor);
+}
+
+.galery .box h3 {
+    color: #ffff;
+}
+
+#tenis {
+    margin-top: 5rem;
+}
+
+#swiming {
+    margin-top: 5rem;
+}
+
+.content::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.aboutus .content img {
+    width: 20rem;
+    height: 29rem;
+    border-bottom: 3px solid var(--abu);
+    float: left;
+    width: 40%;
+    margin-top: 1.5rem;
+    padding: 0 10px 0 0;
+
+}
+
+.aboutus .content p {
+    text-align: justify;
+    color: #ffff;
+    width: 60%;
+    float: right;
+    margin-top: 1.5rem;
+    padding-bottom: 3rem;
+
+}
+
+.aboutus .content a {
+    color: #ffff;
+    text-decoration: underline;
+    margin-left: 32rem;
+
+}
+
+
+
+.aboutus h1 {
+    margin-top: 8rem;
+    color: #ffff;
+}
+
+.kotak {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5rem;
+    column-gap: 2rem;
+    margin-top: 3rem;
+
+}
+
+.packages {
+    margin-top: 8rem;
+}
+
+.kotak {
+    font-family: sans-serif;
+}
+
+.jadwal {
+    position: relative;
+}
+
+.jadwal img {
+    background-size: cover;
+    width: 35rem;
+    height: 20rem;
+    opacity: 0.3;
+    border-radius: 12px;
+
+}
+
+.jadwal .topleft {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+.jadwal .center {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    font-size: 4rem;
+    color: #35686E;
+    font-family: sans-serif;
+}
+
+.topright {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 10px;
+    left: 16px;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.bottomright {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.ourteam h1 {
+    margin-top: 5rem;
+}
+
+.ourteam .mySwiper {
+    margin-top: 3rem;
+}
+
+.card_image {
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    border: 5px solid var(--color);
+    padding: 3px;
+    margin-bottom: 2em;
+}
+
+.card_image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+.ourteam .mySwiper {
+    width: 100%;
+    height: 35em;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.mySwiper .card {
+    width: 20em;
+    height: 90%;
+    background-color: #040507;
+    border-radius: 2em;
+    box-shadow: 0 0 2em rgba(0, 0, 0, 2);
+    padding: 2em 1em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 2em;
+}
+
+.swiper-slide:not(.swiper-slide-active) {
+    filter: blur(1px);
+}
+
+
+.card_content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card_title {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.card_text {
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 1rem 0;
+}
+
+.card_name {
+    color: var(--color);
+}
+
+.button {
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+    background: #3d3a4e;
+    background-size: 400%;
+    color: #fff;
+}
+
+.button:hover::before {
+    transform: scaleX(1);
+}
+
+.button-content {
+    position: relative;
+    z-index: 1;
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(82.3deg,
+            rgba(150, 93, 233, 1) 10.8%,
+            rgba(99, 88, 238, 1) 94.3%);
+    transition: all 0.475s;
+}
+
+
+.footer {
+    background-color: #040507;
+    padding: 70px 0;
+    box-sizing: border-box;
+
+}
+
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer .box-container .box {
+    margin-left: 3rem;
+    width: 20%;
+    padding: 0 15px;
+}
+
+.footer .box-container .box .links {
+    display: block;
+    font-size: 1rem;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box .links i {
+    padding-right: .5rem;
+}
